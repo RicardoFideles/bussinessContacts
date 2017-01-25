@@ -8,11 +8,11 @@ import { AppComponent } from './app.component';
 
 // Must export the config
 export const firebaseConfig = {
-  apiKey: "AIzaSyAHit06lKNyXr6noe497CM96DFfyAK2W5g",
-  authDomain: "bussinesscontacts-a0373.firebaseapp.com",
-  databaseURL: "https://bussinesscontacts-a0373.firebaseio.com",
-  storageBucket: "bussinesscontacts-a0373.appspot.com",
-  messagingSenderId: "793776822050"
+  apiKey: '<your-key>',
+  authDomain: '<your-project-authdomain>',
+  databaseURL: '<your-database-URL>',
+  storageBucket: '<your-storage-bucket>',
+  messagingSenderId: '<your-messaging-sender-id>'
 };
 
 @NgModule({
@@ -21,7 +21,6 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(firebaseConfig),
     FormsModule,
     HttpModule
   ],

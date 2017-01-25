@@ -13,7 +13,6 @@ export class AppComponent {
 
   constructor(af: AngularFire) {
     this.items = af.database.list('/items');
-    console.log(this.items);
   }
 
   

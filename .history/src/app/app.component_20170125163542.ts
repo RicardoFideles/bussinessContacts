@@ -7,14 +7,5 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
-  items: FirebaseListObservable<any[]>;
   title = 'app works!';
-
-  constructor(af: AngularFire) {
-    this.items = af.database.list('/items');
-    console.log(this.items);
-  }
-
-  
 }
